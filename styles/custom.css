@@ -1,0 +1,15 @@
+#__next {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-2 font-medium leading-5 tracking-tight text-white align-bottom transition-colors bg-purple-500 border border-transparent rounded-lg cursor-pointer focus:outline-none hover:bg-purple-700;
+  }
+  .btn code {
+    @apply ml-2;
+  }
+}
