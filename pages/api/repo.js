@@ -16,14 +16,8 @@ const handler = async (req, res) => {
       method: 'GET',
     });
     const repoInfo = await resp.json();
-
-    const {
-      name,
-      full_name,
-      stargazers_count,
-      forks_count,
-      watchers_count,
-    } = repoInfo;
+    const { name, full_name, stargazers_count, forks_count, watchers_count } =
+      repoInfo;
     return res
       .status(200)
       .json({ name, full_name, stargazers_count, forks_count, watchers_count });
