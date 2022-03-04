@@ -24,7 +24,7 @@ export const getStaticProps = async () => {
   const reposData = await Promise.all(
     repos.map(async repo => {
       const data = await fetch(
-        `https://intro-to-nextjs.vercel.app/api/repo?id=${encodeURIComponent(
+        `https://intro-to-nextjs-arturocr.vercel.app/api/repo?id=${encodeURIComponent(
           repo
         )}`
       );

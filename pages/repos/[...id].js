@@ -36,7 +36,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
   const data = await fetch(
-    `https://intro-to-nextjs.vercel.app/api/repo?id=${encodeURIComponent(
+    `https://intro-to-nextjs-arturocr.vercel.app/api/repo?id=${encodeURIComponent(
       params.id
     )}`
   );
